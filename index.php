@@ -69,7 +69,7 @@
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
-                echo "<h2>People who are registered:" .count($registrants)." Orang</h2>";
+                echo "<h2>People who are registered: " .count($registrants)." People</h2>";
                 echo "<table>";
                 echo "<tr><th>Name</th>";
                 echo "<th>Email</th>";
