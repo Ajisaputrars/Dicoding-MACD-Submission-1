@@ -63,7 +63,7 @@
         }
 
         echo "<h3>Your're registered!</h3>";
-    } else if (isset($_POST['load_data'])) {
+    } else if (isset($_GET['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Users";
             $stmt = $conn->query($sql_select);
@@ -85,7 +85,11 @@
             } else {
                 echo "<h3>No one is currently registered.</h3>";
             }
-            // if(count($registrants) > 0) {
+        } catch(Exception $e) {
+            echo "Failed: " . $e;
+        }
+
+        // if(count($registrants) > 0) {
             //     echo "<h2>Mahasiswa yang sudah teregistrasi kendaraannya sebanyak : ".count($registrants)." Orang</h2>";
             //     echo "<table class='table table-hover'><thead>";
             //     echo "<tr><th>Name</th>";
@@ -102,9 +106,6 @@
             // } else {
             //     echo "<h3>No one is currently registered.</h3>";
             // }
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
-        }
     }
  ?>
  </body>
