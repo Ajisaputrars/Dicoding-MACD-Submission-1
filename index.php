@@ -31,10 +31,10 @@
     // $pass = "<Password admin database Anda>";
     // $db = "<Nama database Anda>";
 
-    $host = "dicodingwebappserver00.database.windows.net";
-    $user = "dicoding";
-    $pass = "Test1234";
-    $db = "dicodingwebapp";
+    $host = "";
+    $user = "";
+    $pass = "";
+    $db = "";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
@@ -88,24 +88,6 @@
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-
-        // if(count($registrants) > 0) {
-            //     echo "<h2>Mahasiswa yang sudah teregistrasi kendaraannya sebanyak : ".count($registrants)." Orang</h2>";
-            //     echo "<table class='table table-hover'><thead>";
-            //     echo "<tr><th>Name</th>";
-            //     echo "<th>NIM</th>";
-            //     echo "<th>TKNB</th>";
-            //     echo "<th>Date</th></tr></thead><tbody>";
-            //     foreach($registrants as $registrant) {
-            //         echo "<tr><td>".$registrant['nama']."</td>";
-            //         echo "<td>".$registrant['nim']."</td>";
-            //         echo "<td>".$registrant['npk']."</td>";
-            //         echo "<td>".$registrant['date']."</td></tr>";
-            //     }
-            //     echo "</tbody></table>";
-            // } else {
-            //     echo "<h3>No one is currently registered.</h3>";
-            // }
     }
  ?>
  </body>
