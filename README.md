@@ -19,7 +19,7 @@ Agar bisa lulus Submission 1, aplikasi ini harus memiliki fitur:
 This project is free and open. You can participate to this project to make even more better for everybody to learn.
 
 ### **License**
-This project is licensed under the GNU General Public License v3.0 - see the [**LICENSE.md**][1] file for details.
+This project is licensed under the MIT license - see the [**LICENSE.md**][1] file for details.
 
 
 [1]:	https://github.com/Ajisaputrars/Dicoding-MACD-Submission-1/blob/master/LICENSE
